@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Dokumentasi 2024 - 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #333;
+        }
+
+        .header h2 {
+            margin: 0;
+            color: #666;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .container {
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .box {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .box a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .box:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>File Dokumentasi 2024 - 2025</h1>
+        <h2>Website by Sastra TIK</h2>
+    </div>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='images/IMG_20231123_074052.jpg') }}" alt="Header Image">
+    </div>
+    <div class="container">
+        <div class="box-container">
+            <div class="box"><a href="#">Idul Adha Qurban</a></div>
+            <div class="box"><a href="#">Rekreasi Yogyakarta</a></div>
+            <div class="box"><a href="#">Hari Guru</a></div>
+            <div class="box"><a href="#">Class meeting</a></div>
+            <div class="box"><a href="#">Isra' mi'raj</a></div>
+        </div>
+    </div>
+</body>
+</html>
